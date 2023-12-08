@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding:0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(bui.jpg);
+    background-size: cover;
+    background-position: fixed;
+    background-position: center;
+    position:relative;
+}
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.links ul li{
+    list-style:none;
+    display:inline-block;
+    padding: 8px;
+    margin:15px;
+    text-indent:50px;
+    text-shadow:1px 1px red;
+    margin-right:3px;
+    justify-content: space-evenly;
+}
+.links ul li a{
+    color:white;
+    text-decoration: none;
+    font-size:15px;
+    float:right;
+}
+.links ul li::after{
+    content:'';
+    width:0%;
+    height:1px;
+    background:#e63b2f;
+    display:block;
+    margin:40px;
+    transition:0.5s;
+}
+.links ul li:hover::after{
+    width:70%;
+}
+.text-box{
+    width:90%;
+    color:white;
+    text-align:center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.text-box h1{
+    font-size:62px;
+}
+.text-box p{
+    margin:10px o 40px;
+    font-size:18px;
+    color:fff;
+}
+#b{
+    align: left;
+    
+}
+.hero-btn{
+    display:inline-block;
+    text-decoration: none;
+    color:yellow;
+    border:2px solid #fff;
+    padding:10px;
+    font-size:15px;
+    background: transparent;
+    position:relative;
+    cursor:pointer;
+    background-color:#ff0000;
+    border-radius: 35px;
+    border:none;
+    text-align: left;
+}
+.hero-btn:hover{
+    border:1px solid yellow;
+    background:rgb(236, 4, 178);
+    transition:1s;
+}
+nav .fa{
+    display:none;
+}
+@media(max-width:700px){
+    .text-bok h1{
+        font-size:20px;
+    }
+    .links ul li{
+        display:flex;
+        text-align:center;
+    }
+    .links{
+        position:absolute;
+        background:#f44336;
+        height:100%;
+        width:150px;
+        top:0;
+        right:-200px;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display:block;
+        color:white;
+        margin:10px;
+        font-size:22px;
+        cursor:pointer;
+    }
+    .links ul{
+        padding:30px;
+    }
+}
+.course{
+   width:80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;  
+
+}
+h1{
+    font-size:36px;
+    font-weight:600;
+}
+p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content:space-between;
+}
+.course-col{
+    flex-basis:31%;
+    background: #facfcf;
+    border-radius:10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing:border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px o;
+}
+.course-col:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.9);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.campus{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.layer{
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    
+}
+.row{
+    flex-basis:31%;
+    border-radius:10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing:border-box;
+    
+}
+#campus-col1 img{
+     height:500px;
+     width:31%;
+     float:left;
+     margin-right: 3%;
+}
+#campus-col2 img{
+     height:500px;
+     width:30%;
+     float:left;
+     margin-right: 3%;
+}
+campus-col3 img{
+        height:500px;
+        width:30%;
+        margin-right: 3%;
+        float:right;        
+}
+.testimonials{
+    width:80%;
+    margin:auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonials-col{
+    flex-basis: 44%;
+    border-radius:10px;
+    margin-bottom:5%;
+    text-align:left;
+    background: #f8a9a9;
+    padding: 25px;
+    cursor:pointer;
+    display:flex;
+    float:left;
+}
+.testimonials-col img{
+    height:0px;
+    text-align: center;
+    margin-left:5px;
+    margin-right: 10px;
+    border-radius: 50%;
+    float: right;
+}
+body{
+    background-color: rgb(204, 201, 201);
+}
+.cta{
+    margin: 100px auto;
+    width:80%;
+    height:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(studyimg.jfif);
+    background-position: center;
+    background-size:cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color:white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.icons{
+    color:red;
+    margin:0;
+    cursor:pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color:#f44336;
+}
+
+
